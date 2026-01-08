@@ -5,7 +5,7 @@ import MultiStepper from "./machineCodingQuestions/multiStepper/MultiStepper";
 function App() {
   return (
     <>
-      <div>
+      <div className="app">
         <h2>All Machine Coding Questions Will be Here</h2>
         <MultiStepper />
       </div>
