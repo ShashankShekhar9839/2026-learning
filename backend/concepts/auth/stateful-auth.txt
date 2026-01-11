@@ -1,0 +1,19 @@
+ Medium Resource  ---> https://medium.com/@kennch/stateful-and-stateless-authentication-10aa3e3d4986 
+
+ https://medium.com/@asish_kumar/stateful-authentication-cookie-cached-and-more-adac0608ecdd
+
+ Stateless auth -- https://medium.com/@asish_kumar/how-stateless-authentication-is-achieved-02519f24a675
+
+Stateful authentication is an authentication method where the server stores and manages the session information for each active user. The server essentially "remembers" the user's state throughout their interaction with the application. 
+
+ --->  How it works (Session based) ? 
+
+Stateful authentication is typically implemented using server-side sessions and cookies. The process generally follows these steps: 
+
+1. Login: A user provides their credentials (e.g., username and password) to the server.
+2. Session Creation: Upon successful verification, the server generates a unique session ID and stores this ID, along with associated user data (like user ID, roles, etc.), in a server-side database, memory, or cache (e.g., Redis).
+3. Session ID Transmission: The server sends the unique session ID back to the client, usually embedded within an HTTP cookie.
+4. Subsequent Requests: For all subsequent requests, the client's browser automatically includes this session ID cookie in the request headers.
+5. Server Verification: The server uses the received session ID to look up the corresponding session data in its storage. If a valid session is found, the server processes the request and grants access to the requested resources.
+6. Logout/Expiry: When the user logs out or the session expires, the server destroys the session record on its end, immediately invalidating the session ID held by the client. 
+

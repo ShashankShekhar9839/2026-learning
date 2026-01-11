@@ -1,0 +1,13 @@
+Authentication  --- means who you are (login) ? 
+
+Authorization --- means what you can do (like admin, user) ? 
+
+
+Types of Authentication --- 
+
+Statefull 
+Stateless  
+Oauth
+OIDC 
+
+
