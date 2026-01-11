@@ -1,0 +1,20 @@
+-- Serialization in the bakend converts complex, in-memory objects (like user data, lists) into a portable format(like JSON, XML, or bytes) for storage or network transfer.
+Deserialization does the reverse, turning that stream back into usable objects, bridging communication gaps between different systems and enabling persistece, caching and distributed processing. 
+
+Backend services uses these processes to send data to frontend, save to databases, or communicatie with other microservices. 
+
+ ---> Serialization
+
+What it is: The process of converting an object's state (data and structure) into a format suitable for storage or transmission, such as a sequence of bytes or a text-based format like JSON.
+
+---> Why it's needed:
+
+-Network Communication: Different systems (e.g., browser and server, microservices) speak different languages; data needs a universal format like JSON/XML to travel over HTTP.
+-Persistence: To save an object's state to a file, database, or cache, it must be serialized.
+-Caching: Storing serialized objects for faster retrieval later.
+-Common Formats: JSON, XML, Protocol Buffers (Protobuf), binary formats (like Java's native serialization). 
+
+
+---> Deserialization
+What it is: The reverse process; converting the serialized data (bytes, JSON string) back into a live, usable object in the application's memory.
+Why it's needed: To process incoming network requests or data retrieved from storage as meaningful objects (e.g., a user object with properties like name and age). 

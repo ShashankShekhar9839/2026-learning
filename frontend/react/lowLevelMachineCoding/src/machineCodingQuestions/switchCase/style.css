@@ -1,0 +1,27 @@
+.switch-container {
+  width: fit-content;
+}
+
+.switch {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.switch-item {
+  padding: 6px 14px;
+  border: none;
+  background: #f4f4f4;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.switch-item.active {
+  background: #ff4d4f;
+  color: white;
+}
+
+.switch-item:not(.active):hover {
+  background: #e6e6e6;
+}

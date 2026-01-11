@@ -22,7 +22,7 @@ function MultiStepper({ numberOfSteps = 5 }) {
 
   return (
     <div className="container">
-      <p>MultiStepper</p>
+      <h4>MultiStepper</h4>
 
       <div className="stepper">
         {steps.map((_, index) => (
