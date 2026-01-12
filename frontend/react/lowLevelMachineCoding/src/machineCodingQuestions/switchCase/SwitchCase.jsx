@@ -25,6 +25,7 @@ const SwitchCase = ({ options = [], value, defaultValue, onChange }) => {
 
   return (
     <div className="switch-container">
+      <h4>Swith Case</h4>
       <div className="switch">
         {options.map((option) => (
           <button

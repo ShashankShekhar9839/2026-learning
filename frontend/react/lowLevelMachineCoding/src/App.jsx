@@ -3,6 +3,7 @@ import "./App.css";
 import MultiStepper from "./machineCodingQuestions/multiStepper/MultiStepper";
 import SwitchCase from "./machineCodingQuestions/switchCase/SwitchCase";
 import InfiniteScroll from "./machineCodingQuestions/infiniteScroll/InfiniteScroll";
+import InfiniteScrollUsingIntersectionObserver from "./machineCodingQuestions/infiniteScroll/InfiniteScrollUsingIntersectionObserver";
 
 function App() {
   const questions = [
@@ -16,6 +17,7 @@ function App() {
       ]}
     />,
     <InfiniteScroll />,
+    <InfiniteScrollUsingIntersectionObserver />,
   ];
 
   return (
