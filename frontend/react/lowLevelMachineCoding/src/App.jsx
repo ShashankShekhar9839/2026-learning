@@ -6,6 +6,7 @@ import InfiniteScroll from "./machineCodingQuestions/infiniteScroll/InfiniteScro
 import InfiniteScrollUsingIntersectionObserver from "./machineCodingQuestions/infiniteScroll/InfiniteScrollUsingIntersectionObserver";
 import TwoStepLogin from "./machineCodingQuestions/twoStepLogin/TwoStepLogin";
 import EditableTodoWrapper from "./machineCodingQuestions/editableTodoList/EditableTodoWrapper";
+import StickyTable from "./machineCodingQuestions/stickyTable/StickyTable";
 
 function App() {
   const questions = [
@@ -22,6 +23,7 @@ function App() {
     <InfiniteScrollUsingIntersectionObserver />,
     <TwoStepLogin />,
     <EditableTodoWrapper />,
+    <StickyTable />,
   ];
 
   return (
