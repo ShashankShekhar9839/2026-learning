@@ -16,6 +16,8 @@ class Sampler {
     this.elements = elements;
   }
 
+  //   Fisher-Yates logic.
+
   sample(k) {
     let ans = [];
     let n = this.elements.length;
